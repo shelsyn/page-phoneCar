@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
+  pageExtensions: ['ts', 'tsx', 'md'],
+  reactStrictMode: true,
+  swcMinify: false,
+  images: {
+    domains: ['images.unsplash.com', 'images.pexels.com', 'ui-avatars.com', 'firebasestorage.googleapis.com'],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
